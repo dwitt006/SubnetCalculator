@@ -1,0 +1,94 @@
+
+CONTENTS
+========
+
+* Introduction
+* Requirements
+* File List
+* Directory Structure
+* Installation
+* Operation
+* Definitions
+* Developers
+
+INTRODUCTION
+============
+
+SubnetCalculator is an educational application that calculates the numerous
+variables of a subnet. It takes input from the user and provides a step by
+step solution.  
+
+REQUIREMENTS
+============
+
+* Developed with python 3.5.2
+* Environment capable of using Tkinter, Tcl/Tk
+
+DIRECTORY STRUCTURE
+===================
+
+./SubnetCalculator/                   # Project directory
+|- LICENSE                            # Open-source license
+|- README                             # Instructional document
+|- SubnetCalculator/                  # Primary coding directory
+|   |- __init__.py                    # Notify python of package
+|   |- SubnetCalculator.py            # Algorithms: Calculate variables
+|   |- AssignableHostCountCalcGUI.py  # GUI: Calculate assignable host count
+|   |- BroadcastCalcGUI.py            # GUI: Calculate broadcast address
+|   |- CIDRCalcGUI.py                 # GUI: Calculate CIDR address
+|   |- GenSubnetCalcGUI.py            # GUI: Calculate general
+|   |- HelpSubnetCalcGUI.py           # GUI: Help example
+|   |- IPRangeCalcGUI.py              # GUI: Calculate assignable IP range
+|   |- NetCalcGUI.py                  # GUI: Calculate network address
+|   |- NetmaskCalcGUI.py              # GUI: Calculate netmask
+|   |- SubnetCalculatorGUI.py         # GUI: Basic menu
+|   |- TotalHostCalcGUI.py            # GUI: Calculate total host count
+|- test/                              # Testing directory
+|   |- __init__.py                    # Notify python of package
+|   |- SubnetCalculatorTest.py        # Test: Algorithms
+
+INSTALLATION
+============
+
+* python setup.py install
+* ex:
+*   c:\> [Directory Path\]python3 setup.py install
+*      $ [Directory Path/]python3 setup.py install
+
+OPERATION
+=========
+
+* SubnetCalc
+* ex:
+*   c:\> SubnetCalc
+*      $ SubnetCalc
+
+* For widgets with entries:
+*   Type proper input into widget
+*   Click calculate button
+*   If reusing same widget, click calculate 2nd time to clear output
+
+* Proper input ex:
+*            CIDR Address: 152.2.136.0/26
+*         Network Address: 152.2.136.0
+*                 Netmask: 255.255.255.192
+*       Broadcast Address: 152.2.136.63
+*     Assignable IP Range: 152.2.136.1-152.2.136.62
+*        Total Host Count: 64
+*   Assignable Host Count: 62
+
+DEFINITIONS
+===========
+
+* Assignable Host Count -- Address count within assignable IP range
+* Assignable IP Range   -- IP addresses open for assignment; excluding Network and Broadcast
+* Broadcast Address     -- Reserved address for contacting all assignable IP
+* CIDR Address          -- Classless Inter-Domain Routing address
+* Netmask               -- IP address used to determine a subnet's range of IPs
+* Network Address       -- Address that identifies the Subnet on the network
+* Total Host Count      -- Address count of all IPs; including Network and Broadcast
+
+DEVELOPERS
+==========
+
+* Draper Wittkopp
